@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>16sep_assig</title>
+  </head>
+  <body>
+    <h1>Images</h1>
+
+    <img src="./images/image2.avif" alt="Image 1" width="200" />
+    <img src="./images/image3.jfif" alt="Image 2" width="200" />
+    <img src="./images/image4.jfif" alt="Image 3" width="200" />
+    <img src="./images/image5.jfif" alt="image 4" width="200" />
+    <!-- Add more images as needed -->
+    <h2>Audio and video tags</h2>
+    <audio
+      controls
+      controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
+      src="./Heeriye_64-(PagalWorld).mp3"
+    ></audio>
+    <video
+      controls
+      controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
+      src="./Heeriye - Arijit Singh-(PagalWorld.video).mp4"
+      width="200"
+    ></video>
+    <h1>Auto play video</h1>
+    <video width="540" height="360" controls>
+      <source
+        src="./Heeriye - Arijit Singh-(PagalWorld.video).mp4"
+        type="video/mp4"
+      />
+    </video>
+    <h1>About pw site</h1>
+    <iframe
+      width="800"
+      src="https://en.wikipedia.org/wiki/Physics_Wallah#:~:text=Physics%20Wallah%20Private%20Limited%2C%20commonly,hailing%20from%20Prayagraj%2C%20Uttar%20Pradesh."
+      frameborder="0"
+    ></iframe>
+    <h1>singup form </h1>
+
+    <form action="signup_process.php" method="post">
+        <label for="first_name">First Name:</label>
+        <input placeholder="First Name" type="text" id="first_name" name="first_name" required minlength="3">
+<br>
+        <label for="last_name">Last Name:</label>
+        <input placeholder="Last Name" type="text" id="last_name" name="last_name" required minlength="3">
+<br>
+        <label for="email">Email:</label>
+        <input placeholder="Email" type="email" id="email" name="email" required>
+<br>
+        <label for="password">Password:</label>
+        <input placeholder="Password" type="password" id="password" name="password" required minlength="8">
+<br>
+        <label for="confirm_password">Confirm Password:</label>
+        <input placeholder="Confirm Password" type="password" id="confirm_password" name="confirm_password" required minlength="8">
+<br>
+        <label for="age">Age:</label>
+        <input placeholder="Age" type="number" id="age" name="age" required min="0" max="150">
+<br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+<br>
+        <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+        <label for="terms_conditions">I agree to the terms and conditions</label>
+
+        <button type="submit">Sign Up</button>
+    </form>
+<h2>singin form </h2>
+<form action="signin_process.php" method="post">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+<br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required minlength="8">
+
+  <button type="submit">Sign In</button>
+</form>
+
+</body>
+</html>
+
+  </body>
+</html>
